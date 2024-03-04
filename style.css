@@ -16,7 +16,7 @@
 .menu-bar ul{
     display: inline-flex;
     list-style: none;
-    color: #fff;
+    color:black;
     float: right;
     
     
@@ -28,9 +28,10 @@
     padding: 10px;
     text-align: center;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-   background-color: #000022;
     font-size: 15px;
     opacity: 0.9;
+    padding: 15px;
+    background-color:black;
     
     
 
@@ -41,63 +42,76 @@
 
 .menu-bar ul li a{
     text-decoration: none;
-    color:#fff;
+    color:white;
     
 
 }
 .active, .menu-bar ul li:hover{
-    background:#1F487E  ;
+    background:rgb(85, 84, 84);
     border-radius: 2px;
 }
 
 
 .hello{
-   width:25%;
+   width:28%;
    color: white;
    position: absolute;
    top: 30%;
    left: 25%;
    transform:translate(-50%,-50%);
    text-align: center;
-    font-size: 30px;
-    opacity: 0.3;
+    font-size: 27px;
+    
    
    
 }
 
 
- 
-
-
   
 body{
-    background-color: black;
-   
+    background-image: url("./images/aa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
     
     
 }
 
  .mushi{
     width:25%;
-    color: #637074;
+    color: white;
     position: absolute;
     top: 45%;
     left: 77%;
     transform:translate(-50%,-50%);
    
      font-size: 16px;
+        text-align: left; 
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    
     
     
 } 
 .header{
 
-    padding: 60px;
-    background-color: #637074;
-   
-   font-size: 35px;
+    padding: 30px;
+    
+   color: white;
+   font-size: 55px;
   align-items: center;
+  background-image: url('./images/header.jpg');
+  opacity: 0.7;
+  font-family: Arial, sans-serif;
+  text-align: center; 
+  color: white; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+
+
   
-  opacity: 0.6;
+ 
 
 
     
@@ -107,7 +121,7 @@ body{
     position: absolute;
     left: 40%;
     top: 36%;
-    opacity: 0.6;
+   
     
 
 }
@@ -121,25 +135,8 @@ body{
     left: 65%;
     top: 63%;
     font-family: cursive;
-     opacity: 0.6;
+    
 
-}
-.x {
-    list-style-type: none;
-    padding: 0;
-color: white;
-position: absolute;
-top: 62%;
-left: 30%;
-transform:translate(-50%,-50%);
-
- font-size: 16px;
-
-    margin-bottom: 10px;
-
-[type="checkbox"] {
-    margin-right: 10px;
-}
 
 
 }
@@ -147,7 +144,7 @@ transform:translate(-50%,-50%);
     position: absolute;
      left: 5%;
      top: 35%;
-      opacity: 0.6;
+     
       background-color: white;
 
 }
@@ -169,7 +166,7 @@ transform:translate(-50%,-50%);
     position: absolute;
      left: 4%;
      top: 55%;
-      opacity: 0.6;
+    
     
 }
 .z{
@@ -184,7 +181,7 @@ transform:translate(-50%,-50%);
     position: absolute;
     left: 3%;
     top: 70%;
-     opacity: 0.6;
+    
   
 }
 .s{
@@ -194,5 +191,147 @@ transform:translate(-50%,-50%);
     top: 70%;
     left: 19%;
 }
+.me{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 22px;
+    border: 5px solid white; 
+    padding: 20px; 
+    text-align: center; 
+ 
+}
 
+.Ame{
+    position: absolute;
+    left: 52%;
+    top: 20%;
+    color: white;
+    font-size: 30px;
+   
+}
+.mewmew
+{
+    position: absolute;
+    left: 1%;
+    top: 0.01%;
+    
+    
   
+    
+}
+.wow{
+    position: absolute;
+    left: 7%;
+    top: 1.5%;
+
+}
+
+.mew{
+
+    position: absolute;
+    left: 1%;
+    top: 0.05%;  
+}
+
+.sheesh{
+    position: absolute;
+    left: 18%;
+    top: 39%;  
+    opacity: 0.6;
+
+}
+
+.data{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    background-color: white;
+}
+
+.wow{
+    position:absolute;
+    top: 15%;
+    left: 6%;
+  
+}
+
+.ddr1{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    
+}
+
+.ui{
+    position: absolute;
+    top: 53%;
+    left: 55%;
+}
+.contact{
+    position: absolute;
+    top: 20%;
+    left: 25%;  
+    color:black;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px; 
+    width: 380px;
+    height: 473px;
+    opacity: 0.9;
+
+}
+.social-media-icons{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+   
+}
+
+.mao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.mail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+
+}
+  .resume{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    border-radius: 50%;
+    
+
+  }
+   /* Resume Download Button Styling */
+   .resume-download {
+    text-align: center;
+    margin-top: 20px;
+}
+.resume-download button {
+    background-color: #acacac;
+    color: rgb(19, 18, 18);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.resume-download button:hover {
+    background-color: #ebf0eb;
+}
+footer {
+    background-color: gray;
+    color: white;
+    padding: 20px 0;
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.5;
+}
