@@ -10,12 +10,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
-        /* Contact Form Styling */
-        form {
-            max-width: 500px;
-            margin: 0 auto;
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
-        input[type="text"], input[type="email"], textarea {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .menu-bar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-bar ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .menu-bar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        .menu-bar ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Contact Form Styling */
+        .contact {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact h2 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .contact input[type="text"], 
+        .contact input[type="email"], 
+        .contact textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
@@ -23,17 +80,18 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type="submit"] {
-            background-color: #878a87;
-            color: white;
+        .contact input[type="submit"] {
+            background-color: #333;
+            color: #fff;
             padding: 15px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s ease;
         }
-        input[type="submit"]:hover {
-            background-color: #6f726f;
+        .contact input[type="submit"]:hover {
+            background-color: #555;
         }
 
         /* Social Media Icon Styling */
@@ -45,8 +103,9 @@
             display: inline-block;
             margin: 0 10px;
             font-size: 30px;
-            color: #555;
+            color: #333;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         .social-media-icons a:hover {
             color: #3B5998;
@@ -55,62 +114,54 @@
 </head>
 
 <body>
-    <div class="data">
-        <img src="./images/data-removebg-preview.png">
-    </div>
-
-    <div class="ddr1">
-        <img src="./images/ddr1.png">
-    </div>
-
     <div class="header">
         <div class="menu-bar">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="skill.html">CERTIFICATIONS</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
     </div>
-   
-<div class="mail">
-    <img src="./images/12321321.png">
-</div>
 
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <form netlify name="contact-form" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact-form">
-            
-            <!-- Replace the email address below with your own -->
-            <input type="hidden" name="to" value="delarosa_dennis@yahoo.com">
-            
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            
-            <label for="subject">Subject:</label><br>
-            <input type="text" id="subject" name="subject" required><br>
-            
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="6" required></textarea><br>
-            
-            <input type="submit" value="Submit">
-        </form>
+    <div class="container">
+        <div class="data">
+            <img src="./images/data-removebg-preview.png">
+        </div>
+
+        <div class="ddr1">
+            <img src="./images/ddr1.png">
+        </div>
+
+       
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <form netlify name="contact-form" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact-form">
+                <input type="hidden" name="to" value="delarosa_dennis@yahoo.com">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+       
     </div>
 
-
-    <div class="mao">
-        <img src="./images/ddr1.png">
+    <div class="social-media-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>
