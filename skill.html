@@ -1,77 +1,206 @@
 <!DOCTYPE html>
-<html>
-<head>  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Web Page
-</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Page</title>
 <link rel="stylesheet" href="style.css">
-
+<style>
+  /* Style for the image container */
+  .image-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 300px; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add some space between images */
+    position: relative; /* Required for absolute positioning of the zoomed image */
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out; /* Add smooth transition effect */
+  }
+  .image:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  /* Style for the description */
+  .description {
+    display: none; /* Initially hide the description */
+    margin-top: 10px; /* Add some space between the image and description */
+    text-align: center; /* Center text */
+  }
+  
+  /* Style for the "See More" button */
+  .show-more,
+  .hide {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%; /* Make buttons fill the container width */
+  }
+  
+  /* Style for the zoomed image */
+  .zoomed-image {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; /* Adjust the maximum width of the zoomed image */
+    max-height: 90%; /* Adjust the maximum height of the zoomed image */
+    z-index: 9999;
+  }
+</style>
 </head>
 
 <body>
-    <div class="header">
+
+<div class="header">
        
+    <div class="menu-bar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="skill.html">CERTIFICATIONS</a></li>
+            <li><a href="project.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+    
+    
+</ul>
+
+
+ 
+
+    
+
+</div>
+</div>
+
+<div class="ddr1">
+    <img src="./images/ddr1.png" onclick="zoomImage(this)">
+</div>
+
+<div class="data">
+    <img src="./images/data-removebg-preview.png" onclick="zoomImage(this)">
+</div>
+
+<div class="move">
+
+<h3>CyberOps Assosiate</h3>
+<div class="image-container">
+  <img src="./images/ASEC.PNG" alt="Your Image 1" class="image" onclick="zoomImage(this)">
+  <div class="description">
+    <p><h5>Cisco CyberOps is a program that trains individuals to detect and respond to cybersecurity threats effectively. It equips professionals with the skills needed to safeguard networks and data from cyberattacks. With Cisco CyberOps, experts can stay ahead of evolving online dangers, ensuring the safety and security of digital assets.</h5></p>
+  </div>
+  
+  <button onclick="showDescription(1)" class="show-more">See More</button>
+  <button onclick="hideDescription(1)" class="hide">Hide</button>
+</div>
+
+
+<h3>Cyber Security Certificate</h3>
+<div class="image-container">
+  <img src="./images/CyberSec.PNG" alt="Your Image 2" class="image" onclick="zoomImage(this)">
+  <div class="description">
+    <p><h5>Cisco's cybersecurity solutions help keep businesses safe from online dangers. They use smart technology like firewalls and encryption to protect against cyber threats. With Cisco, companies can defend their networks and data, keeping important information safe and secure.</h5></p>
+  </div>
+  
+  <button onclick="showDescription(2)" class="show-more">See More</button>
+  <button onclick="hideDescription(2)" class="hide">Hide</button>
+</div>
+
+
+<h3>Introduction to IOT Certificate</h3>
+<div class="image-container">
+  <img src="./images/Iot.PNG" alt="Your Image 3" class="image" onclick="zoomImage(this)">
+  <div class="description">
+    <p><h5>Introduction to IoT is a course that introduces the concept of the Internet of Things (IoT) to learners. It covers the basics of connecting devices and collecting data from sensors to enable smart applications. With Introduction to IoT, participants gain insights into the transformative potential of IoT technologies in various industries.</h5></p>
+  </div>
+  
+  <button onclick="showDescription(3)" class="show-more">See More</button>
+  <button onclick="hideDescription(3)" class="hide">Hide</button>
+</div>
+</div>
+
+<div class="movers">
+    <h3>Red Hat System Administration <br>Certificate</h3>
+    <div class="image-container">
+      <img src="./images/redHat.PNG" alt="Your Image 1" class="image" onclick="zoomImage(this)">
+      <div class="description">
+        <p><h5>Red Hat System Administration is a training program designed to teach individuals how to manage and maintain Red Hat Enterprise Linux systems. Participants learn essential skills such as user administration, file system management, and system security. With Red Hat System Administration, students gain the expertise needed to effectively manage Linux-based environments.</h5></p>
+      </div>
      
-        
-    </ul>
-
-
-        <div class="menu-bar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="skill.html">SKILLS</a></li>
-                <li><a href="project.html">PROJECTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-        
-    
-        
-       <div class="hello">
-        <h2>I am a Developer</h2>
-        <p>Welcome to my E-Portfolio.</p>
+      <button onclick="showDescription(4)" class="show-more">See More</button>
+      <button onclick="hideDescription(4)" class="hide">Hide</button>
     </div>
-</div>
-</div>
+    
    
-    <div class="image">
-        <img src="./images/IMG_9695-removebg-preview.png" alt="den">`
+    <h3>Cat Linux Badge</h3>
+    <div class="image-container">
+      <img src="./images/cat.PNG" alt="Your Image 2" class="image" onclick="zoomImage(this)">
+      <div class="description">
+        <p><h5>The Cat Linux Badge on TryHackMe is a learning path that introduces users to various aspects of Linux operating systems. Through interactive challenges and tasks, participants learn essential Linux skills such as navigating the command line, managing files and directories, and performing basic system administration tasks. With the Cat Linux Badge, users can enhance their proficiency in Linux and prepare for real-world cybersecurity scenarios.</h5></p>
+      </div>
+      
+      <button onclick="showDescription(5)" class="show-more">See More</button>
+      <button onclick="hideDescription(5)" class="hide">Hide</button>
     </div>
     
-    
-
-
-            
-        
+   
+    <h3>Google Analytics Certificate</h3>
+    <div class="image-container">
+      <img src="./images/google.PNG" alt="Your Image 3" class="image" onclick="zoomImage(this)">
+      <div class="description">
+        <p><h5>Google Analytics is a powerful tool that helps website owners track and analyze their website traffic and user behavior. It provides valuable insights into how visitors interact with a website, including metrics such as page views, bounce rate, and conversion rate. With Google Analytics, businesses can make data-driven decisions to optimize their online presence and improve user experience.</h5></p>
+      </div>
+      
+      <button onclick="showDescription(6)" class="show-more">See More</button>
+      <button onclick="hideDescription(6)" class="hide">Hide</button>
     </div>
-    <div class = "mushi">
-       <h1>Hello,</h1>
-       <p>I am a passionate web developing student who studies web development at Holy Angel University.
-        I have knowledge and skills in some languages, such as HTML, which is the main foundation of a web site, and CSS.
-        that is used for styling the layout of the website. and I also have knowledge of some programming languages, such as
-        Java, Phyton, Dart, and Java Script. that are used to make the website interactive and more functional. If you would like to know me more, try to visit my About page, where you can learn more about me. Thank you for visiting my page.
-        </p>
-        
-       </div>
-
-<div class="dennis">
-    <h2>Dennis dela Rosa</h2>   
 
 </div>
 
+
+<div id="zoomed" class="zoomed-image"></div>
+
+<script>
+function showDescription(index) {
+  document.querySelectorAll('.description')[index - 1].style.display = 'block';
+}
+
+function hideDescription(index) {
+  document.querySelectorAll('.description')[index - 1].style.display = 'none';
+}
+
+function zoomImage(image) {
+  // Create a new image element for the zoomed image
+  var zoomedImage = document.createElement("img");
+  zoomedImage.src = image.src;
+  zoomedImage.alt = image.alt;
+  
+  // Set styles for the zoomed image
+  zoomedImage.style.width = "100%"; // Adjust the width as needed
+  zoomedImage.style.height = "auto"; // Maintain aspect ratio
+  zoomedImage.style.cursor = "pointer";
+  
+ 
+  var zoomedDiv = document.getElementById("zoomed");
+  zoomedDiv.innerHTML = ""; 
+  zoomedDiv.appendChild(zoomedImage);
+  
+  // 
+  zoomedDiv.style.display = "block";
+  
+ 
+  zoomedDiv.onclick = function() {
+    zoomedDiv.style.display = "none";
+  };
+}
+</script>
 
 </body>
-    
-
 </html>
-
-
-
-
-
-   
-        
-   
-
-   
-
