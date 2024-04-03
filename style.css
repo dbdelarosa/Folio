@@ -72,27 +72,27 @@ body{
     background-image: url("./images/aa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 200vh;
     
     
 }
 
- .mushi{
-    width:25%;
+.mushi {
+    width: 27%;
     color: white;
     position: absolute;
     top: 45%;
     left: 77%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    font-size: 16px;
    
-     font-size: 16px;
-        text-align: left; 
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
     
     
-    
-} 
+
 .header{
 
     padding: 30px;
@@ -116,7 +116,7 @@ body{
 
     
 }
-.image{
+.images{
    
     position: absolute;
     left: 40%;
@@ -140,50 +140,8 @@ body{
 
 
 }
-.proj{
-    position: absolute;
-     left: 5%;
-     top: 35%;
-     
-      background-color: white;
 
-}
-.y{
-    color: white;
-   
-    position: absolute;
-    top: 25%;
-    left: 3%;
-}
-.lav{
-    color: white;
-    
-    position: absolute;
-    top: 33%;
-    left: 19%;
-}
-.gal{
-    position: absolute;
-     left: 4%;
-     top: 55%;
-    
-    
-}
-.z{
-    color: white;
-    
-    position: absolute;
-    top: 55%;
-    left: 19%;
 
-}
-.spr{
-    position: absolute;
-    left: 3%;
-    top: 70%;
-    
-  
-}
 .s{
     color: white;
   
@@ -272,7 +230,7 @@ body{
 .contact{
     position: absolute;
     top: 20%;
-    left: 25%;  
+    left: 40%;  
     color:black;
     background-color: rgb(204, 204, 204);
     border-radius: 10px; 
@@ -283,23 +241,14 @@ body{
 }
 .social-media-icons{
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 75%;
+    left: 45%;
+    background-color: white;
    
 }
 
-.mao{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-.mail{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
 
-}
+
   .resume{
     position: absolute;
     top: 70%;
@@ -325,13 +274,24 @@ body{
 .resume-download button:hover {
     background-color: #ebf0eb;
 }
-footer {
-    background-color: gray;
-    color: white;
-    padding: 20px 0;
-    text-align: right;
+.move{
     position: absolute;
-    width: 100%;
-    bottom: 0;
-    opacity: 0.5;
+    top: 15%;
+    left: 26%;
+    border-radius: 50%;
+}
+
+.movers{
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    border-radius: 50%;
+}
+h3{
+    color: wheat;
+  }
+
+
+h5{
+    color: white;
 }
