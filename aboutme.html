@@ -1,98 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>  
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Web Page
-</title>
-<link rel="stylesheet" href="style.css">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Global Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
 
+        /* Header Styling */
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-bar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .menu-bar li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .menu-bar a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Main Content Styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            flex: 0 0 calc(33.33% - 20px);
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+        .item h2 {
+            color: #343a40;
+        }
+        .item p {
+            color: #6c757d;
+        }
+
+        
+    </style>
 </head>
-
 <body>
-
-
-  
     <div class="header">
-       
         <div class="menu-bar">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="skill.html">CERTIFICATIONS</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-        
-        
-    </ul>
-
-
-     
-    
-        
-   
-</div>
-</div>
-   
-<div class="ddr1">
-    <img src="./images/ddr1.png">
-  </div>  
-  <div class="data">
-    <img src="./images/data-removebg-preview.png">
-</div>
-    
-    <div class="wow">
-        <img src="./images/dennisD.png">
-    </div>
-        
+            </ul>
+        </div>
     </div>
 
-  
-  
-    <div class="Ame">
-     <h2>About Me</h2>   
-    
-    </div>       
-        
+    <div class="container">
+        <div class="ddr1">
+            <img src="./images/ddr1.png" alt="DDR1 Image">
+        </div>
+        <div class="data">
+            <img src="./images/data-removebg-preview.png" alt="Data Image">
+        </div>
+        <div class="item">
+            <img src="./images/dennisD.png" alt="Dennis Image">
+        </div>
+        <div class="item">
+            <h2>About Me</h2>
+            <p>I’m Dennis dela Rosa, a student who is passionate about working and developing interactive and visually appealing website designs. I strive to ensure that every aspect of a website will enhance the user experience. Let’s collaborate and build something extraordinary together. Thank you.</p>
+        </div>
+        <div class="item">
+            <img src="./images/UI-UX-removebg-preview.png" alt="UI/UX Image">
+        </div>
     </div>
-    <div class = "me">
-      
-       <p> I’m Dennis dela Rosa, a student who is passionate on working and developing<br>
-        interactive and visual appealing website designs.I strive to ensure that every<br>
-        aspect of a website will enhance the user experience. May it be experimenting<br> 
-        with new layouts or in color scheming, I am eager to push my creativity to its <br>  
-        fullest and also outside developing, I am also interested on photography. Let’s <br>
-        collaborate and build something extraordinary together. Thank you.<br>
-        </p>
-        
-       </div>
-       
 
-<div class="ui">
-    <img src="./images/UI-UX-removebg-preview.png">
-</div>
-
-   
-
-
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
-
+ 
+    </div>
 </body>
-    
-
 </html>
-
-
-
-
-
-   
-        
-   
-
-   
-
