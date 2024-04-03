@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html>
-
-  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Web Page
-</title>
-<link rel="stylesheet" href="style.css">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
 
+     
+        
+        .menu-bar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .menu-bar li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .menu-bar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+     
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; /* Change alignment to flex-start */
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .item {
+            flex: 1 1 calc(33.33% - 20px); /* Adjust item width */
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .item:hover {
+            transform: translateY(-10px);
+        }
+        .item h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .item p {
+            color: #555;
+        }
+
+       
+    </style>
 </head>
 
 <body>
     <div class="header">
-       
-     
-        
-    </ul>
-
-
         <div class="menu-bar">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutme.html">ABOUT ME</a></li>
-                <li><a href="skill.html">SKILLS</a></li>
+                <li><a href="skill.html">CERTIFICATIONS</a></li>
                 <li><a href="project.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-        
-    </ul>
+            </ul>
+        </div>
     </div>
+
+    <div class="main-content">
+        <div class="ddr1">
+            <img src="./images/ddr1.png">
+        </div>
+        <div class="data">
+            <img src="./images/data-removebg-preview.png">
+        </div>
+        <div class="item lav">
+            <img src="./images/Capture-removebg-preview.png">
+            <h2>LAVA CRAZE</h2>
+            <p>In this project, we have exhibited our creativity by making a website for a coffeeshop. Our client, Sir Rhodz, is satisfied with our work, as we gave him all that he requested to see on his website. Click <a href="https://lavacraze.com/" target="_blank">here</a> to be redirected.</p>
+        </div>
+        <div class="item gal">
+            <img src="./images/ffff.JPG">
+            <h2>Galactic Pressed Tasting</h2>
+            <p>In this project, we not only exhibited our creativity but also learned to use a NoSQL database that records customers' orders, which will be saved in our database.</p>
+        </div>
+        <div class="item spr">
+            <img src="./images/sprint-removebg-preview.png">
+            <h2>Sprint AutoCare</h2>
+            <p>In this project, our team made a website and integrated it with different applications that would make the website more interactive and functional for the user.</p>
+        </div>
     </div>
-    <div class="ddr1">
-        <img src="./images/ddr1.png">
-    </div>
-    <div class="data">
-        <img src="./images/data-removebg-preview.png">
-    </div>
-       <div class="proj">
-        <img src="./images/Capture-removebg-preview.png">
-       
-      
-        
-    </div>
-    <div class="y">
-    <h2>My Projects:</h2>
 
-</div>
-</div>
-<div class="lav">
-    <h2>LAVA CRAZE</h2>
-    <p>
-        In this project We have exhibited our creativity by making a website for a coffeeshop,<br>
-        Our client here Sir Rhodz is satisfied with our work, as we given him all that he have <br>
-        requested to see in his website.<br>
-       Click Here to be Redirected .<br><a href="https://lavacraze.com/" target="_blank">LavaCraze</a>
-
-
-    </p>
-
-</div>
-<div class="gal">
-    <img src="./images/ffff.png">
-
-</div>
-<div class="z">
-    <h2>Galactic Pressed Tasting</h2>
-    <p>In this Project we did not only Exhibited our creativity, we also learned to use a<br> NoSql database
-    that records the customers order, and will be saved in our database.  </p>
-</div>
-<div class="spr">
-    <img src="./images/sprint-removebg-preview (1).png">
-
-</div>
-<div class="s">
-    <h2>Sprint AutoCare</h2>
-    <p>In This Project our team made a website and Integrated them to different application <br>
-    that would make the website more interactive and more fuctional for the user.</p>
-
-</div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
+   
 </body>
 </html>
