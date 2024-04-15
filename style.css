@@ -72,7 +72,7 @@ body{
     background-image: url("./images/aa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     
     
 }
@@ -186,12 +186,8 @@ body{
 
 }
 
-.mew{
 
-    position: absolute;
-    left: 1%;
-    top: 0.05%;  
-}
+
 
 .sheesh{
     position: absolute;
@@ -424,12 +420,12 @@ h5{
     .comment{
 
         position: absolute;
-        left: 18%;
-        top: 67%;
+        left: 40%;
+        top: 46%;
     }
     .output{
 
         position: absolute;
-        left: 35%;
-        top: 80%;
+        left: 28%;
+        top: 85%;
     }
