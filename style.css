@@ -120,7 +120,7 @@ body{
    
     position: absolute;
     left: 40%;
-    top: 36%;
+    top: 40%;
    
     
 
@@ -301,3 +301,135 @@ h5{
     left: 130%;
     border-radius: 50%;
 }
+
+ /* Your existing CSS styles */
+ .menu-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+.menu-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.item {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Add position relative */
+}
+.item:hover {
+    transform: translateY(-10px);
+}
+.item h2 {
+    margin-top: 0;
+    color: #333;
+}
+.item p {
+    color: #555;
+}
+
+       /* Testimonials Form Styles */
+       .testimonial-form {
+        margin: 20px auto;
+        max-width: 500px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .testimonial-form input[type="text"],
+    .testimonial-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .testimonial-form textarea {
+        height: 100px; /* Adjust textarea height */
+    }
+
+    .testimonial-form button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .testimonial-form button:hover {
+        background-color: #45a049;
+    }
+
+    .testimonial-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 20px; /* Adjust the margin-bottom to add space between cards */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        max-width: 300px;
+        margin: 0 auto; /* This line is removed because it's already set above */
+    }
+
+    .testimonial-card p {
+        margin: 0;
+        color: #555;
+        font-size: 14px;
+    }
+
+   
+
+  
+
+    .testimonial-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px; /* Adjust the gap to add space between testimonial cards */
+    }
+    .comment{
+
+        position: absolute;
+        left: 18%;
+        top: 67%;
+    }
+    .output{
+
+        position: absolute;
+        left: 35%;
+        top: 80%;
+    }
