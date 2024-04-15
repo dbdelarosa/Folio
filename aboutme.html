@@ -8,20 +8,26 @@
     <style>
        
       
-      /* Main Content Styling */
-      .container {
+ /* Main Content Styling */
+ .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+            background-image: url('background.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the background image */
+            opacity: 0.8; /* Reduced opacity */
         }
         .item {
             flex: 0 0 calc(33.33% - 40px);
             margin: 20px;
-            background-color: #ffffff; /* Item background color */
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background */
             border-radius: 20px; /* Rounded corners */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
             padding: 20px;
@@ -31,10 +37,12 @@
         .item:hover {
             transform: translateY(-5px); /* Move up on hover */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+            background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Gradient background on hover */
         }
         .item h2 {
             color: #2c3e50; /* Title text color */
             margin-bottom: 10px; /* Added spacing between title and content */
+            font-size: 24px; /* Increased font size */
         }
         .item p {
             color: #555; /* Content text color */
@@ -43,10 +51,14 @@
         .item img {
             max-width: 100%;
             border-radius: 20px; /* Rounded corners for images */
+            transition: transform 0.3s ease; /* Smooth transition */
         }
-
-        
+        .item:hover img {
+            transform: scale(1.1); /* Scale up on hover */
+        }
     </style>
+        
+ 
 </head>
 <body>
     <div class="header">
