@@ -6,37 +6,10 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Global Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-
-        /* Header Styling */
-        .header {
-            background-color: #343a40;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        .menu-bar ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        .menu-bar li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .menu-bar a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        /* Main Content Styling */
-        .container {
+       
+      
+      /* Main Content Styling */
+      .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -46,19 +19,30 @@
             align-items: center;
         }
         .item {
-            flex: 0 0 calc(33.33% - 20px);
-            margin: 10px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 10px;
+            flex: 0 0 calc(33.33% - 40px);
+            margin: 20px;
+            background-color: #ffffff; /* Item background color */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+            padding: 20px;
             text-align: center;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .item:hover {
+            transform: translateY(-5px); /* Move up on hover */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
         }
         .item h2 {
-            color: #343a40;
+            color: #2c3e50; /* Title text color */
+            margin-bottom: 10px; /* Added spacing between title and content */
         }
         .item p {
-            color: #6c757d;
+            color: #555; /* Content text color */
+            line-height: 1.6; /* Improved readability with increased line-height */
+        }
+        .item img {
+            max-width: 100%;
+            border-radius: 20px; /* Rounded corners for images */
         }
 
         
@@ -89,7 +73,7 @@
         </div>
         <div class="item">
             <h2>About Me</h2>
-            <p>I’m Dennis dela Rosa, a student who is passionate about working and developing interactive and visually appealing website designs. I strive to ensure that every aspect of a website will enhance the user experience. Let’s collaborate and build something extraordinary together. Thank you.</p>
+            <p>I'm Dennis Dela Rosa, a web developer. I have basic skills in some programming languages like Java, Python, Dart, and Flutter. I have basic knowledge of Linux and Windows OS. I also write blogs and work on the front-end part of projects.</p>
         </div>
         <div class="item">
             <img src="./images/UI-UX-removebg-preview.png" alt="UI/UX Image">
