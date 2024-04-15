@@ -7,35 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <style>
        
-
-     
-        
-        .menu-bar ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        .menu-bar li {
-            display: inline;
-            margin-right: 20px;
-        }
-        .menu-bar a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-     
         .main-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: flex-start; /* Change alignment to flex-start */
+            align-items: flex-start;
             gap: 20px;
             margin: 20px auto;
             max-width: 1200px;
         }
         .item {
-            flex: 1 1 calc(33.33% - 20px); /* Adjust item width */
+            flex: 1 1 calc(33.33% - 20px);
             background-color: #fff;
             border-radius: 8px;
             padding: 20px;
@@ -53,8 +35,6 @@
         .item p {
             color: #555;
         }
-
-       
     </style>
 </head>
 
@@ -73,28 +53,81 @@
 
     <div class="main-content">
         <div class="ddr1">
-            <img src="./images/ddr1.png">
+            <img src="./images/ddr1.png" alt="DDR1 Image">
         </div>
         <div class="data">
-            <img src="./images/data-removebg-preview.png">
+            <img src="./images/data-removebg-preview.png" alt="Data Image">
         </div>
-        <div class="item lav">
-            <img src="./images/Capture-removebg-preview.png">
+        <div class="item">
+            <img src="./images/Capture-removebg-preview.png" alt="Lava Craze Image">
             <h2>LAVA CRAZE</h2>
             <p>In this project, we have exhibited our creativity by making a website for a coffeeshop. Our client, Sir Rhodz, is satisfied with our work, as we gave him all that he requested to see on his website. Click <a href="https://lavacraze.com/" target="_blank">here</a> to be redirected.</p>
         </div>
-        <div class="item gal">
-            <img src="./images/ffff.JPG">
+
+        <div class="item">
+            <img src="./images/4m.JPG" alt="4M Image">
+            <h2>4M-CRU</h2>
+            <p>In this project, my client requested if I could modify some of her pages like in the contact page and her about us page. You can visit by Clicking <a href="https://www.4m-cru.com.au/" target="_blank">here</a> to be redirected.</p>
+        </div>
+        <div class="item">
+            <img src="./images/ffff.JPG" alt="Galactic Pressed Tasting Image">
             <h2>Galactic Pressed Tasting</h2>
             <p>In this project, we not only exhibited our creativity but also learned to use a NoSQL database that records customers' orders, which will be saved in our database.</p>
         </div>
-        <div class="item spr">
-            <img src="./images/sprint-removebg-preview.png">
+        <div class="item">
+            <img src="./images/sprint-removebg-preview.png" alt="Sprint AutoCare Image">
             <h2>Sprint AutoCare</h2>
-            <p>In this project, our team made a website and integrated it with different applications that would make the website more interactive and functional for the user.</p>
+            <p>In this project, our team made a website and integrated it with different applications that would make the website more interactive and functional for the user. Click <a href="https://sprintersasi.bitbucket.io/SPRINTAutoCare1" target="_blank">here</a> to be redirected.</p>
         </div>
-    </div>
+  
 
-   
+ 
+ <!-- Testimonials Form -->
+ <div class="comment">
+ <div class="testimonial-form">
+    <h2>Leave a Testimonial</h2>
+    <form id="testimonialForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="message">Testimonial:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</div>
+<div class="output">
+<!-- Testimonials Container -->
+<div class="testimonial-container" id="testimonialsContainer"></div>
+
+<script>
+    const form = document.getElementById('testimonialForm');
+    const container = document.getElementById('testimonialsContainer');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = this.querySelector('#name').value;
+        const message = this.querySelector('#message').value;
+
+        if (name && message) {
+            // Create testimonial card
+            const card = document.createElement('div');
+            card.classList.add('testimonial-card');
+            card.innerHTML = `
+                <p><strong>${name}</strong></p>
+                <p>${message}</p>
+            `;
+
+            // Append card to container
+            container.appendChild(card);
+
+            // Reset form
+            this.reset();
+        } else {
+            alert('Please fill in all fields.');
+        }
+    });
+</script>
+</div>
 </body>
 </html>
