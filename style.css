@@ -248,13 +248,13 @@ body{
   .resume{
     position: absolute;
     top: 70%;
-    left: 70%;
+    left: 64%;
     border-radius: 50%;
     
 
   }
    /* Resume Download Button Styling */
-   .resume-download {
+   .resume-download{
     text-align: center;
     margin-top: 20px;
 }
@@ -283,6 +283,7 @@ body{
     left: 38%;
     border-radius: 50%;
 }
+
 h3{
     color: wheat;
   }
@@ -298,20 +299,7 @@ h5{
     border-radius: 50%;
 }
 
- /* Your existing CSS styles */
- .menu-bar ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.menu-bar li {
-    display: inline;
-    margin-right: 20px;
-}
-.menu-bar a {
-    color: #fff;
-    text-decoration: none;
-}
+ 
 
 .main-content {
     display: flex;
@@ -428,4 +416,48 @@ h5{
         position: absolute;
         left: 28%;
         top: 85%;
+    }.popup-banner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent; /* Set background to transparent */
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        text-align: center;
+        max-width: 80%;
     }
+    
+    .popup-banner img {
+        max-width: 100%; /* Make the image fill the width of the banner */
+        max-height: 100%; /* Make the image fill the height of the banner */
+        border-radius: 20px; /* Maintain rounded corners */
+        opacity: 0.7;
+    }
+    
+    .popup-banner button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 30px;
+    }
+    
+    .popup-banner button:hover {
+        background-color: #555;
+    }
+    
+    
+    
+    .yeah{
+        position: absolute;
+        left:10%;
+
+    }
+
+
+  
