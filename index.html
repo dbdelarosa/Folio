@@ -6,13 +6,8 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   
-   
-
-        
-
-       
     
+     
 </head>
 
 <body>
@@ -51,21 +46,46 @@
             About page, where you can learn more about me. Thank you for visiting my page.
         </p>
     </div>
-    
     <div class="resume">
-    <div class="resume-download">
-        <a href="./dennnnnnnn.pdf" download>
-            <button>Download Resume</button>
-        </a>
+        <div class="resume-download">
+            <a href="./dennnnnnnn.pdf" download>
+                <button>Download Resume</button>
+            </a>
+            <a href="./CoverLetterDennisD.pdf" download>
+                <button>Download Cover Letter</button>
+            </a>
+        </div>
     </div>
-</div>
     <div class="sheesh">
         <img src="./images/ddr.png">
     </div>
     <div class="dennis">
         <h2>Dennis dela Rosa</h2>   
     </div>
+<div class="yeah">
+    <!-- Pop-up Banner -->
+    <div class="popup-banner" id="popupBanner">
+        <img src="./images/navi.png">
+        <button onclick="closePopup()">Close</button>
+    </div>
 
-  
+    <!-- JavaScript for the pop-up functionality -->
+    <script>
+        // Function to show the pop-up banner
+        function showPopup() {
+            document.getElementById("popupBanner").style.display = "block";
+        }
+
+        // Function to close the pop-up banner
+        function closePopup() {
+            document.getElementById("popupBanner").style.display = "none";
+        }
+
+        // Show the pop-up when the page loads (you can remove this if you want)
+        window.onload = function() {
+            showPopup();
+        };
+    </script>
+    </div>
 </body>
 </html>
